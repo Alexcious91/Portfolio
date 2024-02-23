@@ -13,83 +13,80 @@
 // document.getElementById("rightarm").style.background = "green";
 // document.getElementById("mouth").style.background = "pink";
 
-// let rightEye = document.getElementById("righteye");
-// rightEye.addEventListener("click", moveUpDown);
-// let leftEye = document.getElementById("lefteye");
-// leftEye.addEventListener("click", moveUpDown);
-// let nose = document.getElementById("nose");
-// nose.addEventListener("click", moveNoseUpDown);
+let rightEye = document.getElementById("righteye");
+rightEye.addEventListener("click", moveUpDown);
+let leftEye = document.getElementById("lefteye");
+leftEye.addEventListener("click", moveUpDown);
 
-// Left arm
-// let leftArm = document.getElementById("leftarm");
-// leftArm.onclick = moveRightLeft;
+let nose = document.getElementById("nose");
+nose.addEventListener("click", moveNoseUpDown);
 
 
-// function moveUpDown(e) {
-//     let robotPart = e.target;
-//     let top = 0;
+function moveUpDown(e) {
+    let robotPart = e.target;
+    let top = 0;
 
-//     let animation = setInterval(frame, 50) // animate every 10ms
+    let animation = setInterval(frame, 50) // animate every 10ms
 
-//     function frame() {
-//         robotPart.style.top = top + '%';
-//         top++
+    function frame() {
+        robotPart.style.top = top + '%';
+        top++
 
-//         if (top === 20) {
-//             clearInterval(animation)
-//         }
-//     }
-// }
+        if (top === 20) {
+            clearInterval(animation)
+        }
+    }
+}
 
 
 
 // nose function
-// function moveNoseUpDown(event) {
-//     let robotPart = event.target;
-//     let top = 0;
+function moveNoseUpDown(event) {
+    let robotPart = event.target;
+    let top = 0;
 
-//     let animation = setInterval(frame, 30) // animate every 10ms
+    let animation = setInterval(frame, 30) // animate every 10ms
 
-//     function frame() {
-//         robotPart.style.top = top + '%';
-//         top++
+    function frame() {
+        robotPart.style.top = top + '%';
+        top++
 
-//         if (top === 50) {
-//             clearInterval(animation)
-//         }
-//     }
-// }
+        if (top === 50) {
+            clearInterval(animation)
+        }
+    }
+}
 
 
 // left arm function
 
-// function moveRightLeft(event) {
-//     let robotPart = event.target;
-//     let left = 0;
+function moveRightLeft(event) {
+    let robotPart = event.target;
+    let left = 0;
 
-//     let animation = setInterval(frame, 30) // animate every 10ms
+    let animation = setInterval(frame, 30) // animate every 10ms
 
-//     function frame() {
-//         robotPart.style.left = left++ + '%';
-//         if (left === 66) {
-//             clearInterval(animation)
-//         }
-//     }
-// }
+    function frame() {
+        robotPart.style.left = left++ + '%';
+        if (left === 66) {
+            clearInterval(animation)
+        }
+    }
+}
 
-// let leftArmCup = document.getElementById("cup");
-// leftArmCup.addEventListener("click", throwSodaUp);
+let leftArmCup = document.getElementById("cup");
+leftArmCup.addEventListener("click", throwSodaUp);
 
-// function throwSodaUp(e) {
-//     let robotPart = e.target;
-//     let top = -500;
+function throwSodaUp(e) {
+    let robotPart = e.target;
+    let top = -500;
 
-//     let animation = setInterval(frame, 1);
+    let animation = setInterval(frame, 1);
 
-//     function frame() {
-//         robotPart.style.top = top++ + "%";
-//         if (top === -20) {
-//             clearInterval(animation);
-//         }
-//     }
-// } 
+    function frame() {
+        robotPart.style.top = top++ + "%";
+        if (top === -20) {
+            clearInterval(animation);
+        }
+    }
+} 
