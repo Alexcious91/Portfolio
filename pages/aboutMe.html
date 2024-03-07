@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <!-- Pages styles -->
-oom    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
@@ -21,38 +19,68 @@ oom    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.
             background-color: #f2f2f2;
             padding: 25px;
         }
+
+        .dark-jumbotron {
+            background: #333333 !important;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/index.html">Portfolio</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="javascript:void(0)">Home</a></li>
-                    <li class="active"><a href="javascript:void(0)">About</a></li>
-                    <li><a href="javascript:void(0)">Portfolio</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
-                </ul>
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="bg-dark container-fluid">
+        <div class="d-flex justify-content-between py-3">
 
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>About Me</h1>
+            <a href="index.html" class="text-decoration-none border-primary">
+                <span class="fs-4 text-primary">Portfolio</span>
+            </a>
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/pages/aboutMe.html" class="nav-link active">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#portfolios" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
         </div>
+    </div>
+
+    <div class="jumbotron text-white p-4 dark-jumbotron">
+        <h1 class="display-4 pt-5">About me!</h1>
+        <p class="lead">Passionate about <span class="text-danger">Web Development</span>, let's build something together.</p>
+        <hr class="text-white my-4">
+    </div>
+
+    <section class="container bg-light w-100 p-5">
+        <div class="container-fluid">
+            <h3 class="mb-3">My journey.</h3>
+
+            <p class="lead">I'm a goal-orientated candidate currently studying in Code College. I'm skilled with HTML5, CSS3, Javascript, Node.js, Express.js, MongoDB, Java Spring Edition</p>
+        </div>
+    </section>
+
+    <footer class="container-fluid dark-jumbotron text-white p-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h4 class="text-uppercase mb-3">Location</h4>
+                    <p class="lead">2233 Bonatla Street</p>
+                </div>
+
+                <div class="col-lg-8">
+                    <h4 class="text-uppercase mb-3">About Developer</h4>
+                    <p class="lead">- is a goal-orientated person... <a href="/pages/aboutMe.html">Read more.</a></p>
+                </div>
+                <div class="col-lg-8"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <h4>Copyright © <script>new Date().getFullYear</script></h4>
     </div>
 </body>
 </html>
