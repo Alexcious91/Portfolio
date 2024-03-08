@@ -4,50 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter07 - Animated Robot</title>
-    <link rel="stylesheet" href="/src/chapter07/chapter07.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/chapter07/chapter07.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="bg-dark container-fluid">
+        <div class="d-flex justify-content-between py-3">
+
+            <a href="index.html" class="text-decoration-none border-primary">
+                <span class="fs-4 text-primary">Portfolio</span>
+            </a>
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
                 
-                <a class="navbar-brand" href="/index.html">Portfolio</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li class="active"><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <li class="nav-item">
+                    <a href="/pages/aboutMe.html" class="nav-link">About</a>
+                </li>
                 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
 
     <div id="robot">
         <div id="head">
@@ -64,6 +46,6 @@
         </div>
     </div>
 
-    <script src="/src/chapter07/chapter07.js"></script>
+    <script src="/assets/chapter07/chapter07.js"></script>
 </body>
 </html>
