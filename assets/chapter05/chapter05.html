@@ -24,30 +24,28 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/index.html">Portfolio</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li class="active"><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <div class="bg-dark container-fluid">
+        <div class="d-flex justify-content-between py-3">
+
+            <a href="index.html" class="text-decoration-none border-primary">
+                <span class="fs-4 text-primary">Portfolio</span>
+            </a>
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
                 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a href="/pages/aboutMe.html" class="nav-link">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#portfolios" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
 
     <div class="container-fluid">
         <h1 id="myName" onclick="changeName()">Tiisetso</h1>
