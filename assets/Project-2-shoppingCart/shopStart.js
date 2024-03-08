@@ -35,7 +35,7 @@ function getTotal() {
 
 // Reveal cart items when page load
 function display_all() {
-    var myTable = "<table><th style='width: 100px; color: red; text-align: right;'>Num</th>";
+    var myTable = "<table class='table-bordered'><th style='width: 100px; color: red; text-align: right;'>Num</th>";
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Item</th>";
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Price</th>";
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Quantity</th>";
