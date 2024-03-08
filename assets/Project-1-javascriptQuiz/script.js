@@ -20,7 +20,7 @@ const quizData = [
     }
 ];
 
-let currentQuestion = 0;
+let currentQuestion = 0; // Used as index
 let score = 0;
 
 // main funccction
@@ -41,6 +41,7 @@ function loadQuestion() {
     });
 }
 
+// function to check answer
 function checkAnswer(selectedOption) {
     const currentQuizData = quizData[currentQuestion];
     if (selectedOption === currentQuizData.correctAnswer) {
