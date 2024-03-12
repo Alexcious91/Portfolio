@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="bg-dark container-fluid">
+        <div class="d-flex justify-content-between py-3">
+
+            <a href="index.html" class="text-decoration-none border-primary">
+                <span class="fs-4 text-primary">Portfolio</span>
+            </a>
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/pages/aboutMe.html" class="nav-link">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#portfolios" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="p-3">
+            <div class="shadow p-4">
+                <h4 class="lead text-center mb-3">Welcome to pizzeria</h4>
+                <div class="input-group d-flex align-items-center mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">How many pizzas? </span>
+                    </div>
+                    <input type="number" id="numOfPizzas" class="form-control">
+                </div>
+
+                <div class="input-group d-flex align-items-center mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">What kind of pizza? </span>
+                    </div>
+
+                    <select class="form-control" id="typeOfPizzas">
+                        <option value="supreme">Supreme</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="veggie">Veggie</option>
+                    </select>
+                </div>
+
+                <div class="input-group d-flex align-items-center mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Where do you live </span>
+                    </div>
+
+                    <select class="form-control w-50" id="deliveryCity">
+                        <option value="supreme">Midrand</option>
+                        <option value="supreme">Vaal</option>
+                        <option value="supreme">Cape town</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-danger mt-4" id="placeOrder">Place order</button>
+            </div>
+
+            <div class="displayTotal" id="displayTotal"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
