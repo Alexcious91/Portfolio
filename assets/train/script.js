@@ -10,9 +10,8 @@ let stopButton = document.getElementById("stopButton");
 stopButton.addEventListener("click", stopTrain);
 
 function speedUp() {
-    if (trainSpeed > 10) {
-        trainSpeed -= 10;
-    }
+    trainSpeed -= 20; // Increase speed everytime the train is pressed
+
     // show current speed
     console.log(`Train speed: ${trainSpeed}`);
 
@@ -31,7 +30,7 @@ function speedUp() {
 // show current position
 function checkPosition(currentPosition) {
     if (currentPosition === 260) {
-        console.log("Woah mate you crashed!");
+        alert("Woah mate you crashed!");
         clearInterval(animation);
     }
 }
@@ -39,7 +38,7 @@ function checkPosition(currentPosition) {
 // function to sotp train
 function stopTrain() {
     if (trainPosition < 260) {
-        clearInterval(animation);
         alert("Whew! That was close!");
+        clearInterval(animation);
     }
 }
